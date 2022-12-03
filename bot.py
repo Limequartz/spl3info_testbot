@@ -1,5 +1,6 @@
 import discord
 import spl3ink
+import testbottk
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -44,4 +45,4 @@ async def on_message(message):
         embed.add_field(name="\0", value=str(match_info.maps[1]), inline=True)
         await message.channel.send(embed=embed)
 
-client.run('MTA0ODUxNTMwNDg2NDYzMjg1Mg.GulKmE.iEDonj0bvzWp5yrl4okOcdf5LHU4DcYBh7jfOA')
+client.run(str(testbottk.tk))
